@@ -1,0 +1,15 @@
+flutter=3.38.7 dart=3.10.7 target='test/a_string_id_test.dart test/b_int_id_test.dart' rc=0 segv=0 result=All tests passed!
+flutter=3.38.7 dart=3.10.7 target='test/bundle.dart' rc=1 segv=1 result=Some tests failed.
+flutter=3.38.7 dart=3.10.7 target='test/single_file_test.dart' rc=1 segv=1 result=Some tests failed.
+flutter=3.47.2 dart=3.13.2 target='test/a_string_id_test.dart test/b_int_id_test.dart' rc=0 segv=0 result=All tests passed!
+flutter=3.47.2 dart=3.13.2 target='test/bundle.dart' rc=1 segv=1 result=Some tests failed.
+flutter=3.47.2 dart=3.13.2 target='test/single_file_test.dart' rc=1 segv=1 result=Some tests failed.
+flutter=3.47.4 dart=3.13.3 target='test/a_string_id_test.dart test/b_int_id_test.dart' rc=0 segv=0 result=All tests passed!
+flutter=3.47.4 dart=3.13.3 target='test/bundle.dart' rc=1 segv=1 result=Some tests failed.
+flutter=3.47.4 dart=3.13.3 target='test/single_file_test.dart' rc=1 segv=1 result=Some tests failed.
+flutter=3.47.5 dart=3.13.4 target='test/a_string_id_test.dart test/b_int_id_test.dart' rc=0 segv=0 result=All tests passed!
+flutter=3.47.5 dart=3.13.4 target='test/bundle.dart' rc=1 segv=1 result=Some tests failed.
+flutter=3.47.5 dart=3.13.4 target='test/single_file_test.dart' rc=1 segv=1 result=Some tests failed.
+flutter=3.47.7 dart=3.13.5 target='test/a_string_id_test.dart test/b_int_id_test.dart' rc=0 segv=0 result=All tests passed!
+flutter=3.47.7 dart=3.13.5 target='test/bundle.dart' rc=1 segv=1 result=Some tests failed.
+flutter=3.47.7 dart=3.13.5 target='test/single_file_test.dart' rc=1 segv=1 result=Some tests failed.

@@ -1,0 +1,37 @@
+ok: a
+
+===== CRASH =====
+si_signo=Segmentation fault(11), si_code=SEGV_MAPERR(1), si_addr=0x53
+version=3.13.5 (stable) (Tue Sep 29 01:00:52 2026 -0700) on "linux_x64"
+pid=2919906, thread=2919928, isolate_group=main(0x559cd6d5b790), isolate=main(0x559cd6d82050)
+os=linux, arch=x64, comp=no, sim=no
+isolate_instructions=559cb175b140, vm_instructions=0
+fp=7fae48cfe328, sp=7fae48cfe2f8, pc=7fae5e485100
+  pc 0x00007fae5e485100 fp 0x00007fae48cfe328 [Stub] Subtype2TestCache+0x10
+  pc 0x00007fae5e4acb05 fp 0x00007fae48cfe370 [Unoptimized] check+0xa5
+  pc 0x00007fae5e4aca1d fp 0x00007fae48cfe3a0 [Unoptimized] main+0x8d
+  pc 0x00007fae5e4ac956 fp 0x00007fae48cfe3c8 [Unoptimized] main+0x76
+  pc 0x00007fae5e4ac87b fp 0x00007fae48cfe440 [Unoptimized] _Closure@0150898.dyn:call+0x7fb
+  pc 0x00007fae5e4ab33f fp 0x00007fae48cfe480 [Unoptimized] _delayEntrypointInvocation@1026248.<anonymous closure>+0x2cf
+  pc 0x00007fae5e4ab00e fp 0x00007fae48cfe500 [Unoptimized] _Closure@0150898.dyn:call+0x82e
+  pc 0x00007fae5e4a9d8e fp 0x00007fae48cfe558 [Unoptimized] _RawReceivePort@1026248._handleMessage@1026248+0x19e
+  pc 0x00007fae5e483407 fp 0x00007fae48cfe5d0 [Stub] InvokeDartCode+0x97
+  pc 0x0000559cb194e914 fp 0x00007fae48cfe640 dart::DartEntry::InvokeFunction+0xd4
+  pc 0x0000559cb19504f2 fp 0x00007fae48cfe680 dart::DartLibraryCalls::HandleMessage+0x122
+  pc 0x0000559cb196fa52 fp 0x00007fae48cfebf0 dart::IsolateMessageHandler::HandleMessage+0x322
+  pc 0x0000559cb1993d30 fp 0x00007fae48cfec70 dart::MessageHandler::HandleMessages+0x130
+  pc 0x0000559cb19939e2 fp 0x00007fae48cfecc0 dart::MessageHandler::TaskCallback+0x192
+  pc 0x0000559cb1a7b8e7 fp 0x00007fae48cfed20 dart::ThreadPool::WorkerLoop+0x117
+  pc 0x0000559cb1a7bb52 fp 0x00007fae48cfed50 dart::ThreadPool::Worker::Main+0x82
+  pc 0x0000559cb1a25469 fp 0x00007fae48cfee10 dart::ThreadStart+0xd9
+  pc 0x00007fae5ee98042 fp 0x00007fae48cfef30 /usr/lib/libc.so.6+0x98042
+-- End of DumpStackTrace
+  pc 0x00007fae5e485100 fp 0x00007fae48cfe328 sp 0x00007fae48cfe2f8 [Stub] SlowTypeTest+0xfffffffffffff3a0
+  pc 0x00007fae5e4acb05 fp 0x00007fae48cfe370 sp 0x00007fae48cfe338 [Unoptimized] check+0xa5
+  pc 0x00007fae5e4aca1d fp 0x00007fae48cfe3a0 sp 0x00007fae48cfe380 [Unoptimized] main+0x8d
+  pc 0x00007fae5e4ac956 fp 0x00007fae48cfe3c8 sp 0x00007fae48cfe3b0 [Unoptimized] main+0x76
+  pc 0x00007fae5e4ac87b fp 0x00007fae48cfe440 sp 0x00007fae48cfe3d8 [Unoptimized] _Closure@0150898.dyn:call+0x7fb
+  pc 0x00007fae5e4ab33f fp 0x00007fae48cfe480 sp 0x00007fae48cfe450 [Unoptimized] _delayEntrypointInvocation@1026248.<anonymous closure>+0x2cf
+  pc 0x00007fae5e4ab00e fp 0x00007fae48cfe500 sp 0x00007fae48cfe490 [Unoptimized] _Closure@0150898.dyn:call+0x82e
+  pc 0x00007fae5e4a9d8e fp 0x00007fae48cfe558 sp 0x00007fae48cfe510 [Unoptimized] _RawReceivePort@1026248._handleMessage@1026248+0x19e
+  pc 0x00007fae5e483407 fp 0x00007fae48cfe5d0 sp 0x00007fae48cfe568 [Stub] Entry frame

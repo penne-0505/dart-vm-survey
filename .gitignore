@@ -1,0 +1,5 @@
+tmp/
+upstream-src/
+repro/flutter_bundle/build/
+repro/flutter_bundle/.dart_tool/
+repro-large/aot/

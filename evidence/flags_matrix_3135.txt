@@ -1,0 +1,27 @@
+file=futureor_cast_smi flags='' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] check+0xa5] out=ok: a|
+file=futureor_cast_smi flags='--optimization-counter-threshold=-1' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] check+0x8c] out=ok: a|
+file=futureor_cast_smi flags='--optimization-counter-threshold=1 --no-background-compilation' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Optimized] check+0xd9] out=ok: a|
+file=futureor_cast_smi flags='--no-background-compilation' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] check+0xa5] out=ok: a|
+file=futureor_cast_smi flags='--no-use-osr' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] check+0xa5] out=ok: a|
+file=futureor_cast_smi flags='--max-subtype-cache-entries=0' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] check+0xa5] out=ok: a|
+file=futureor_cast_smi flags='--enable-asserts' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] check+0xa5] out=ok: a|
+file=futureor_cast_smi flags='--no-eliminate-type-checks' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] check+0xa5] out=ok: a|
+file=futureor_cast_smi flags='--no-enable-multiple-entrypoints' rc=252  top=[] caller=[] out=
+file=async_return_smi flags='' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] pictureId+0xca] out=picture-1|
+file=async_return_smi flags='--optimization-counter-threshold=-1' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] pictureId+0xb1] out=picture-1|
+file=async_return_smi flags='--optimization-counter-threshold=1 --no-background-compilation' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Optimized] pictureId+0xa6] out=picture-1|
+file=async_return_smi flags='--no-background-compilation' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] pictureId+0xca] out=picture-1|
+file=async_return_smi flags='--no-use-osr' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] pictureId+0xca] out=picture-1|
+file=async_return_smi flags='--max-subtype-cache-entries=0' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] pictureId+0xca] out=picture-1|
+file=async_return_smi flags='--enable-asserts' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] pictureId+0xca] out=picture-1|
+file=async_return_smi flags='--no-eliminate-type-checks' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] pictureId+0xca] out=picture-1|
+file=async_return_smi flags='--no-enable-multiple-entrypoints' rc=252  top=[] caller=[] out=
+file=hot_loop_variant flags='' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Optimized] cast+0x2a] out=warmed: 200000|
+file=hot_loop_variant flags='--optimization-counter-threshold=-1' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Unoptimized] cast+0x5f] out=warmed: 200000|
+file=hot_loop_variant flags='--optimization-counter-threshold=1 --no-background-compilation' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Optimized] cast+0x2a] out=warmed: 200000|
+file=hot_loop_variant flags='--no-background-compilation' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Optimized] cast+0x2a] out=warmed: 200000|
+file=hot_loop_variant flags='--no-use-osr' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Optimized] cast+0x2a] out=warmed: 200000|
+file=hot_loop_variant flags='--max-subtype-cache-entries=0' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Optimized] cast+0x2a] out=warmed: 200000|
+file=hot_loop_variant flags='--enable-asserts' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Optimized] cast+0x2a] out=warmed: 200000|
+file=hot_loop_variant flags='--no-eliminate-type-checks' rc=134 si_signo=Segmentation fault(11) top=[[Stub] Subtype2TestCache+0x10 ] caller=[[Optimized] cast+0x2a] out=warmed: 200000|
+file=hot_loop_variant flags='--no-enable-multiple-entrypoints' rc=252  top=[] caller=[] out=

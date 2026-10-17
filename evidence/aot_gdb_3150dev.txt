@@ -1,0 +1,5 @@
+ok: a
+rax            0x54                84
+=> 0x7ffff7bf90a8:	mov    -0x1(%rax),%r10d
+   0x7ffff7bf90ac:	shr    $0xc,%r10d
+   0x7ffff7bf90b0:	cmp    $0x3a,%r10

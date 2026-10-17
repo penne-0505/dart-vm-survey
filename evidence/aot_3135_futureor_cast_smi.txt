@@ -1,0 +1,37 @@
+ok: a
+
+===== CRASH =====
+si_signo=Segmentation fault(11), si_code=SEGV_MAPERR(1), si_addr=0x53
+version=3.13.5 (stable) (Tue Sep 29 01:00:52 2026 -0700) on "linux_x64"
+pid=2919895, thread=2919897, isolate_group=main(0x5578d866f4b0), isolate=main(0x5578d866a130)
+os=linux, arch=x64, comp=no, sim=no
+isolate_instructions=7f9cdffb6000, vm_instructions=0
+fp=7f9cdfbfe380, sp=7f9cdfbfe360, pc=7f9cdfff9d48
+  pc 0x00007f9cdfff9d48 fp 0x00007f9cdfbfe380 Unknown symbol
+  pc 0x00007f9cdfff3921 fp 0x00007f9cdfbfe3e0 Unknown symbol
+  pc 0x00007f9cdfff38cc fp 0x00007f9cdfbfe3f0 Unknown symbol
+  pc 0x00007f9cdfff3c63 fp 0x00007f9cdfbfe400 Unknown symbol
+  pc 0x00007f9cdfff5ed7 fp 0x00007f9cdfbfe478 Unknown symbol
+  pc 0x00007f9cdffd1d1b fp 0x00007f9cdfbfe4b0 Unknown symbol
+  pc 0x00007f9cdfff57d5 fp 0x00007f9cdfbfe530 Unknown symbol
+  pc 0x00007f9cdfff5305 fp 0x00007f9cdfbfe558 Unknown symbol
+  pc 0x00007f9cdfffa8de fp 0x00007f9cdfbfe5d0 Unknown symbol
+  pc 0x00005578ce94df3f fp 0x00007f9cdfbfe640 /mnt/ct1/idd/dart-vm-survey/aot/futureor_cast_smi.exe+0x410f3f
+  pc 0x00005578ce94f681 fp 0x00007f9cdfbfe680 /mnt/ct1/idd/dart-vm-survey/aot/futureor_cast_smi.exe+0x412681
+  pc 0x00005578ce95a003 fp 0x00007f9cdfbfebf0 /mnt/ct1/idd/dart-vm-survey/aot/futureor_cast_smi.exe+0x41d003
+  pc 0x00005578ce95fd90 fp 0x00007f9cdfbfec70 /mnt/ct1/idd/dart-vm-survey/aot/futureor_cast_smi.exe+0x422d90
+  pc 0x00005578ce960028 fp 0x00007f9cdfbfecc0 /mnt/ct1/idd/dart-vm-survey/aot/futureor_cast_smi.exe+0x423028
+  pc 0x00005578ce9d3ee7 fp 0x00007f9cdfbfed20 /mnt/ct1/idd/dart-vm-survey/aot/futureor_cast_smi.exe+0x496ee7
+  pc 0x00005578ce9d4152 fp 0x00007f9cdfbfed50 /mnt/ct1/idd/dart-vm-survey/aot/futureor_cast_smi.exe+0x497152
+  pc 0x00005578ce9aca59 fp 0x00007f9cdfbfee10 /mnt/ct1/idd/dart-vm-survey/aot/futureor_cast_smi.exe+0x46fa59
+  pc 0x00007f9ce0098042 fp 0x00007f9cdfbfef30 /usr/lib/libc.so.6+0x98042
+-- End of DumpStackTrace
+  pc 0x00007f9cdfff9d48 fp 0x00007f9cdfbfe380 sp 0x00007f9cdfbfe360 [Stub] Subtype2TestCache+0x10
+  pc 0x00007f9cdfff3921 fp 0x00007f9cdfbfe3e0 sp 0x00007f9cdfbfe390 [Optimized] check+0x3d
+  pc 0x00007f9cdfff38cc fp 0x00007f9cdfbfe3f0 sp 0x00007f9cdfbfe3f0 [Optimized] main+0x24
+  pc 0x00007f9cdfff3c63 fp 0x00007f9cdfbfe400 sp 0x00007f9cdfbfe400 [Optimized] main+0x13
+  pc 0x00007f9cdfff5ed7 fp 0x00007f9cdfbfe478 sp 0x00007f9cdfbfe410 [Optimized] _Closure@0150898.dyn:call+0x32b
+  pc 0x00007f9cdffd1d1b fp 0x00007f9cdfbfe4b0 sp 0x00007f9cdfbfe488 [Optimized] _delayEntrypointInvocation@1026248.<anonymous closure>+0x1bb
+  pc 0x00007f9cdfff57d5 fp 0x00007f9cdfbfe530 sp 0x00007f9cdfbfe4c0 [Optimized] _Closure@0150898.dyn:call+0x365
+  pc 0x00007f9cdfff5305 fp 0x00007f9cdfbfe558 sp 0x00007f9cdfbfe540 [Optimized] _RawReceivePort@1026248._handleMessage@1026248+0xa1
+  pc 0x00007f9cdfffa8de fp 0x00007f9cdfbfe5d0 sp 0x00007f9cdfbfe568 [Stub] Entry frame

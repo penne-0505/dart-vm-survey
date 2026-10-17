@@ -1,0 +1,35 @@
+Dart SDK 3.13.5 (Flutter 3.47.7, engine deb287481e3c) = dart-lang/sdk 04bcd1036cdc799ac6564988f159ee454d42c822
+(read from /home/penne/fvm/versions/3.47.7/bin/cache/dart-sdk/revision and engine DEPS 'dart_revision').
+Sources fetched to upstream-src/04bcd103/.
+
+runtime/vm/class_id.h CLASS_ID_LIST:
+  0 IllegalCid, 1 NativePointer, 2 FreeListElement, 3 ForwardingCorpse, 4 Object,
+  5..44 CLASS_LIST_INTERNAL_ONLY (Class .. UnwindError, 40 entries),
+  45 Instance, 46 LibraryPrefix, 47 TypeArguments, 48 AbstractType, 49 Type,
+  50 FunctionType, 51 RecordType, 52 TypeParameter, 53 FinalizerBase, 54 Finalizer,
+  55 NativeFinalizer, 56 FinalizerEntry, 57 (0x39) Closure, 58 Number, 59 Integer, 60 Smi ...
+=> 0x39 = kClosureCid.
+
+runtime/vm/raw_object.h: ClassIdTag = BitField<tags_, ClassIdTagType, SizeTagBits::kNextBit, 20>; kClassIdTagPos == 12.
+runtime/vm/compiler/assembler/assembler_x64.cc Assembler::LoadClassId:
+  ASSERT(kClassIdTagPos == 12); ASSERT(kClassIdTagSize == 20);
+  movl(result, FieldAddress(object, tags_offset()));   // = movl r,[obj-1]
+  shrl(result, 12);
+=> `movl r10d,[rax-1]; shrl r10d,12; cmp r10,0x39` == LoadClassId(instance) + CompareImmediate(kClosureCid).
+
+Compressed pointers: the x64 JIT (dart and flutter_tester) and x64 AOT stubs load fields with 64-bit movq at
+8-byte strides ([rax+0x17], [r10+0x27], [rax+0x7]) => these x64 builds do NOT use compressed pointers.
+(JIT Closure::function at +0x18, AOT at +0x20; AOT Closure has an extra entry_point field.)
+
+Matching source: runtime/vm/compiler/stub_code_compiler.cc GenerateSubtypeNTestCacheStub (shared part):
+  if (n >= 3) {
+    __ LoadClassIdMayBeSmi(instance_cid_or_sig_reg, TypeTestABI::kInstanceReg);
+  } else {
+    // If the type is fully instantiated, then it can be determined at compile
+    // time whether Smi is a subtype of the type or not. Thus, this code should
+    // never be called with a Smi instance.
+    __ LoadClassId(instance_cid_or_sig_reg, TypeTestABI::kInstanceReg);
+  }
+  __ CompareImmediate(instance_cid_or_sig_reg, kClosureCid);
+  __ BranchIf(NOT_EQUAL, &not_closure, Assembler::kNearJump);
+  // Closure handling: LoadCompressed function / signature, LoadCompressedSmi length_and_flags ...

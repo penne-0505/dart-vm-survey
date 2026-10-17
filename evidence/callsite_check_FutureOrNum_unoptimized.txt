@@ -1,0 +1,24 @@
+0x7f66fbbacb1e    ff7510                 push [rbp+0x10]
+        ;; t1 <- Constant(#Type: FutureOr<num>)
+0x7f66fbbacb21    4d8b5f27               movq tmp,[pp+0x27]   Type: FutureOr<num>
+0x7f66fbbacb25    4153                   push tmp
+        ;; t2 <- Constant(#null)
+0x7f66fbbacb27    41ffb680000000         push [thr+0x80]
+        ;; t3 <- Constant(#null)
+0x7f66fbbacb2e    41ffb680000000         push [thr+0x80]
+        ;; AssertAssignable:20(t0, t1, ' in type cast', instantiator_type_args(t2), function_type_args(t3))
+0x7f66fbbacb35    59                     pop rcx
+0x7f66fbbacb36    5a                     pop rdx
+0x7f66fbbacb37    415b                   pop tmp
+0x7f66fbbacb39    58                     pop rax
+        ;; AssertAssignable for compile-time type
+0x7f66fbbacb3a    a801                   test al,1
+0x7f66fbbacb3c    0f840b000000           jz 0x00007f66fbbacb4d
+0x7f66fbbacb42    498b5f27               movq rbx,[pp+0x27]   Type: FutureOr<num>
+        ;; TTSCall
+0x7f66fbbacb46    4d8b4f2f               movq r9,[pp+0x2f]   null
+0x7f66fbbacb4a    ff5307                 call [rbx+0x7]
+        ;; t0 <- Constant(#TypeArguments: null)
+0x7f66fbbacb4d    41ffb680000000         push [thr+0x80]
+        ;; t1 <- Constant(#2)
+        ;; t0 <- CreateArray:22(t0, t1)

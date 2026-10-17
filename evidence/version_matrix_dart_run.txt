@@ -1,0 +1,20 @@
+flutter=3.38.7 dart=3.10.7 file=futureor_cast_smi rc=134 si_signo=Segmentation fault(11) out=ok: a|
+flutter=3.38.7 dart=3.10.7 file=async_return_smi rc=134 si_signo=Segmentation fault(11) out=picture-1|
+flutter=3.38.7 dart=3.10.7 file=order_dependence rc=134 si_signo=Segmentation fault(11) out=TypeError: type 'int' is not a subtype of type 'FutureOr<String>' in type cast|ok: a|
+flutter=3.38.7 dart=3.10.7 file=control_plain_type rc=0  out=ok: a|TypeError: type 'int' is not a subtype of type 'String' in type cast|
+flutter=3.47.2 dart=3.13.2 file=futureor_cast_smi rc=134 si_signo=Segmentation fault(11) out=ok: a|
+flutter=3.47.2 dart=3.13.2 file=async_return_smi rc=134 si_signo=Segmentation fault(11) out=picture-1|
+flutter=3.47.2 dart=3.13.2 file=order_dependence rc=134 si_signo=Segmentation fault(11) out=TypeError: type 'int' is not a subtype of type 'FutureOr<String>' in type cast|ok: a|
+flutter=3.47.2 dart=3.13.2 file=control_plain_type rc=0  out=ok: a|TypeError: type 'int' is not a subtype of type 'String' in type cast|
+flutter=3.47.4 dart=3.13.3 file=futureor_cast_smi rc=134 si_signo=Segmentation fault(11) out=ok: a|
+flutter=3.47.4 dart=3.13.3 file=async_return_smi rc=134 si_signo=Segmentation fault(11) out=picture-1|
+flutter=3.47.4 dart=3.13.3 file=order_dependence rc=134 si_signo=Segmentation fault(11) out=TypeError: type 'int' is not a subtype of type 'FutureOr<String>' in type cast|ok: a|
+flutter=3.47.4 dart=3.13.3 file=control_plain_type rc=0  out=ok: a|TypeError: type 'int' is not a subtype of type 'String' in type cast|
+flutter=3.47.5 dart=3.13.4 file=futureor_cast_smi rc=134 si_signo=Segmentation fault(11) out=ok: a|
+flutter=3.47.5 dart=3.13.4 file=async_return_smi rc=134 si_signo=Segmentation fault(11) out=picture-1|
+flutter=3.47.5 dart=3.13.4 file=order_dependence rc=134 si_signo=Segmentation fault(11) out=TypeError: type 'int' is not a subtype of type 'FutureOr<String>' in type cast|ok: a|
+flutter=3.47.5 dart=3.13.4 file=control_plain_type rc=0  out=ok: a|TypeError: type 'int' is not a subtype of type 'String' in type cast|
+flutter=3.47.7 dart=3.13.5 file=futureor_cast_smi rc=134 si_signo=Segmentation fault(11) out=ok: a|
+flutter=3.47.7 dart=3.13.5 file=async_return_smi rc=134 si_signo=Segmentation fault(11) out=picture-1|
+flutter=3.47.7 dart=3.13.5 file=order_dependence rc=134 si_signo=Segmentation fault(11) out=TypeError: type 'int' is not a subtype of type 'FutureOr<String>' in type cast|ok: a|
+flutter=3.47.7 dart=3.13.5 file=control_plain_type rc=0  out=ok: a|TypeError: type 'int' is not a subtype of type 'String' in type cast|

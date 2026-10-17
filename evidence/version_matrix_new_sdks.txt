@@ -1,0 +1,27 @@
+JIT dart=3.15.0-27.0.dev file=futureor_cast_smi rc=134 si_addr=0x53 top=[Stub] Subtype2TestCache+0x10 out=ok: a|
+JIT dart=3.15.0-27.0.dev file=async_return_smi rc=134 si_addr=0x53 top=[Stub] Subtype2TestCache+0x10 out=picture-1|
+JIT dart=3.15.0-27.0.dev file=order_dependence rc=134 si_addr=0x55 top=[Stub] Subtype2TestCache+0x10 out=TypeError: type 'int' is not a subtype of type 'FutureOr<String>' in t|ok: a|
+JIT dart=3.15.0-27.0.dev file=json_decode_await_variant rc=134 si_addr=0xffffffffffffffff top=[Stub] Subtype2TestCache+0x10 out=hello|
+JIT dart=3.15.0-27.0.dev file=control_plain_type rc=0  top= out=ok: a|TypeError: type 'int' is not a subtype of type 'String' in type cast|
+AOT dart=3.15.0-27.0.dev file=futureor_cast_smi rc=134 si_addr=0x53 out=ok: a|
+AOT dart=3.15.0-27.0.dev file=async_return_smi rc=134 si_addr=0x53 out=picture-1|
+AOT dart=3.15.0-27.0.dev file=json_decode_await_variant rc=134 si_addr=0xffffffffffffffff out=hello|
+AOT dart=3.15.0-27.0.dev file=control_plain_type rc=0  out=ok: a|TypeError: type 'int' is not a subtype of type 'String' in type cast|
+JIT dart=3.14.0-315.1.beta file=futureor_cast_smi rc=134 si_addr=0x53 top=[Stub] Subtype2TestCache+0x10 out=ok: a|
+JIT dart=3.14.0-315.1.beta file=async_return_smi rc=134 si_addr=0x53 top=[Stub] Subtype2TestCache+0x10 out=picture-1|
+JIT dart=3.14.0-315.1.beta file=order_dependence rc=134 si_addr=0x55 top=[Stub] Subtype2TestCache+0x10 out=TypeError: type 'int' is not a subtype of type 'FutureOr<String>' in t|ok: a|
+JIT dart=3.14.0-315.1.beta file=json_decode_await_variant rc=134 si_addr=0xffffffffffffffff top=[Stub] Subtype2TestCache+0x10 out=hello|
+JIT dart=3.14.0-315.1.beta file=control_plain_type rc=0  top= out=ok: a|TypeError: type 'int' is not a subtype of type 'String' in type cast|
+AOT dart=3.14.0-315.1.beta file=futureor_cast_smi rc=134 si_addr=0x53 out=ok: a|
+AOT dart=3.14.0-315.1.beta file=async_return_smi rc=134 si_addr=0x53 out=picture-1|
+AOT dart=3.14.0-315.1.beta file=json_decode_await_variant rc=134 si_addr=0xffffffffffffffff out=hello|
+AOT dart=3.14.0-315.1.beta file=control_plain_type rc=0  out=ok: a|TypeError: type 'int' is not a subtype of type 'String' in type cast|
+JIT dart=3.13.5 file=futureor_cast_smi rc=134 si_addr=0x53 top=[Stub] Subtype2TestCache+0x10 out=ok: a|
+JIT dart=3.13.5 file=async_return_smi rc=134 si_addr=0x53 top=[Stub] Subtype2TestCache+0x10 out=picture-1|
+JIT dart=3.13.5 file=order_dependence rc=134 si_addr=0x55 top=[Stub] Subtype2TestCache+0x10 out=TypeError: type 'int' is not a subtype of type 'FutureOr<String>' in t|ok: a|
+JIT dart=3.13.5 file=json_decode_await_variant rc=134 si_addr=0xffffffffffffffff top=[Stub] Subtype2TestCache+0x10 out=hello|
+JIT dart=3.13.5 file=control_plain_type rc=0  top= out=ok: a|TypeError: type 'int' is not a subtype of type 'String' in type cast|
+AOT dart=3.13.5 file=futureor_cast_smi rc=134 si_addr=0x53 out=ok: a|
+AOT dart=3.13.5 file=async_return_smi rc=134 si_addr=0x53 out=picture-1|
+AOT dart=3.13.5 file=json_decode_await_variant rc=134 si_addr=0xffffffffffffffff out=hello|
+AOT dart=3.13.5 file=control_plain_type rc=0  out=ok: a|TypeError: type 'int' is not a subtype of type 'String' in type cast|

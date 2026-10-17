@@ -1,0 +1,48 @@
+=== dev-3.15.0-27.0.dev v_0 JIT
+ok: a
+si_signo=Segmentation fault(11), si_code=SEGV_MAPERR(1), si_addr=0xffffffffffffffff
+  pc 0x00007fd750405240 fp 0x00007fd74bdfe338 [Stub] Subtype2TestCache+0x10
+  pc 0x00007fd75042d075 fp 0x00007fd74bdfe380 [Unoptimized] check+0xa5
+  pc 0x00007fd75042cf8d fp 0x00007fd74bdfe3b0 [Unoptimized] main+0x8d
+  pc 0x00007fd75042cec6 fp 0x00007fd74bdfe3d8 [Unoptimized] main+0x76
+exit=0
+=== dev-3.15.0-27.0.dev v_140 JIT
+ok: a
+si_signo=Segmentation fault(11), si_code=SEGV_MAPERR(1), si_addr=0x1ffffffffff
+  pc 0x00007fdeb6e05240 fp 0x00007fdeb67fe338 [Stub] Subtype2TestCache+0x10
+  pc 0x00007fdeb6e2d0a5 fp 0x00007fdeb67fe380 [Unoptimized] check+0xa5
+  pc 0x00007fdeb6e2cfb2 fp 0x00007fdeb67fe3b0 [Unoptimized] main+0xb2
+  pc 0x00007fdeb6e2cec6 fp 0x00007fdeb67fe3d8 [Unoptimized] main+0x76
+exit=0
+=== dev-3.15.0-27.0.dev v_0x41414141 JIT
+ok: a
+si_signo=Segmentation fault(11), si_code=SEGV_MAPERR(1), si_addr=0x82828281
+  pc 0x00007fe3ce605240 fp 0x00007fe3cd9fe338 [Stub] Subtype2TestCache+0x10
+  pc 0x00007fe3ce62d085 fp 0x00007fe3cd9fe380 [Unoptimized] check+0xa5
+  pc 0x00007fe3ce62cf93 fp 0x00007fe3cd9fe3b0 [Unoptimized] main+0x93
+  pc 0x00007fe3ce62cec6 fp 0x00007fe3cd9fe3d8 [Unoptimized] main+0x76
+exit=0
+=== beta-3.14.0-315.1.beta v_0 JIT
+ok: a
+si_signo=Segmentation fault(11), si_code=SEGV_MAPERR(1), si_addr=0xffffffffffffffff
+  pc 0x00007f59f7405190 fp 0x00007f59e4c7e338 [Stub] Subtype2TestCache+0x10
+  pc 0x00007f59f742cfc5 fp 0x00007f59e4c7e380 [Unoptimized] check+0xa5
+  pc 0x00007f59f742cedd fp 0x00007f59e4c7e3b0 [Unoptimized] main+0x8d
+  pc 0x00007f59f742ce16 fp 0x00007f59e4c7e3d8 [Unoptimized] main+0x76
+exit=0
+=== beta-3.14.0-315.1.beta v_140 JIT
+ok: a
+si_signo=Segmentation fault(11), si_code=SEGV_MAPERR(1), si_addr=0x1ffffffffff
+  pc 0x00007fcd08905190 fp 0x00007fccf13fe338 [Stub] Subtype2TestCache+0x10
+  pc 0x00007fcd0892cff5 fp 0x00007fccf13fe380 [Unoptimized] check+0xa5
+  pc 0x00007fcd0892cf02 fp 0x00007fccf13fe3b0 [Unoptimized] main+0xb2
+  pc 0x00007fcd0892ce16 fp 0x00007fccf13fe3d8 [Unoptimized] main+0x76
+exit=0
+=== beta-3.14.0-315.1.beta v_0x41414141 JIT
+ok: a
+si_signo=Segmentation fault(11), si_code=SEGV_MAPERR(1), si_addr=0x82828281
+  pc 0x00007f98c3105190 fp 0x00007f98a6dfe338 [Stub] Subtype2TestCache+0x10
+  pc 0x00007f98c312cfd5 fp 0x00007f98a6dfe380 [Unoptimized] check+0xa5
+  pc 0x00007f98c312cee3 fp 0x00007f98a6dfe3b0 [Unoptimized] main+0x93
+  pc 0x00007f98c312ce16 fp 0x00007f98a6dfe3d8 [Unoptimized] main+0x76
+exit=0

@@ -1,0 +1,60 @@
+[dart-lang/sdk] SubtypeTestCache total 17
+   29453 open 2017-04-24 Directly create SubtypeTestCaches for type tests
+   54623 open 2024-01-15 [vm] SubtypeTestCache.STCSame1000 jumps on FFI CLs
+   48345 open 2022-02-08 Unnecessarily large SubtypeTestCaches for instantiated function types
+   31281 open 2017-11-03 VM: Type casts in unoptimized code are slow
+   48235 open 2022-01-27 SubtypeTestCache overflows due to `is` checks with many different receivers
+   64103 open 2026-08-21 [vm] macOS regression in 3.13.0: every VM handle allocation now pays a thread-local lookup
+   64154 closed 2026-08-27 [benchmarks] Add record lanes to SubtypeTestCache
+   47800 open 2021-11-29 InstanceOfInstr generates unnecessary branching to convert bool to bool
+[dart-lang/sdk] Subtype2TestCache total 0
+[dart-lang/sdk] SlowTypeTest total 7
+   54928 open 2024-02-15 SlowTypeTest is slow in JIT (related to Records it seems)
+   41295 open 2020-04-01 Either avoid AssertAssignable on function type or eliminate it to make async code faster
+   31011 open 2017-10-05 Help optimizing Flutter's .of() pattern
+   63404 closed 2026-05-19 VM: Commit "[vm] Remove irregular type arguments parameter from factories" made things slo
+   54446 closed 2023-12-22 Segfault when running x86 Docker image from Arm on macOS
+   53984 closed 2023-11-07  ../../runtime/vm/raw_object.cc: 356: error: Invalid cid: 0, obj: 0x7f78b60e0b68, tags: 2c
+   48279 closed 2022-02-02 VM crash when trying to watch or evalute a generic type name
+[dart-lang/sdk] FutureOr+Smi total 2
+   41295 open 2020-04-01 Either avoid AssertAssignable on function type or eliminate it to make async code faster
+   34128 closed 2018-08-10 StoreInstanceField can give incorrect kValueIsNotSmi
+[dart-lang/sdk] SIGSEGV+%22as+FutureOr%22 total 0
+[dart-lang/sdk] %22si_addr%3D0x%22+FutureOr total 0
+[dart-lang/sdk] %22type+testing+stub%22+crash total 6
+   52843 closed 2023-07-04 Some ffi/function_callbacks_many tests failing after changing Class::RareType()
+   50367 closed 2022-11-03 [dart2wasm] Argument types are not checked in dynamic invocations
+   43369 closed 2020-09-09 Failures on [ VM / Service ] Roll back major revision, update to 3.39...[vm/compiler] Add 
+   40465 closed 2020-02-05 error: expected: type_class.NumTypeParameters() > 0 && type.arguments() != TypeArguments::
+   33257 closed 2018-05-28 ensure performance of tools on Dart 2 VM is on par with Dart 1
+   35054 closed 2018-11-05 Debug-mode crash with --disassemble for type-testing stubs in AOT
+[dart-lang/sdk] %22DefaultTypeTest%22 total 2
+   63445 open 2026-05-26 Dart AOT: Optimization of type check goes away when adding a field to a class
+   63404 closed 2026-05-19 VM: Commit "[vm] Remove irregular type arguments parameter from factories" made things slo
+[flutter/flutter] SubtypeTestCache total 4
+   103265 closed 2022-05-07 [Flutter for windows] Flutter application start crash
+   83765 closed 2021-06-02 [engine] armv7 build - Dart Kernel parser and Kernel binary generator Segfaults
+   54707 closed 2020-04-14 App crashes when uploading to App Store
+   19931 closed 2018-07-28 Dart SDK Roll 2018-07-27
+[flutter/flutter] Subtype2TestCache total 1
+   162375 open 2025-01-29 Crash on some iOS devices only on Flutter 3.27.3 EXC_BAD_ACCESS   kDartVmSnapshotInstructi
+[flutter/flutter] SlowTypeTest total 6
+   162375 open 2025-01-29 Crash on some iOS devices only on Flutter 3.27.3 EXC_BAD_ACCESS   kDartVmSnapshotInstructi
+   186134 closed 2026-05-06 Mac_mokey microbenchmarks is 2.02% flaky
+   101708 closed 2022-04-11 Stacktraces are truncated at Dart in profile builds
+   88093 closed 2021-08-12 Crash on 2.2.3 version
+   54707 closed 2020-04-14 App crashes when uploading to App Store
+   55443 closed 2020-04-23 App crashes on startup when built through CI
+[flutter/flutter] FutureOr+Smi total 0
+[flutter/flutter] SIGSEGV+%22as+FutureOr%22 total 1
+   57398 closed 2020-05-16 Drawer causing crash only in release mode
+[flutter/flutter] %22si_addr%3D0x%22+FutureOr total 0
+[flutter/flutter] %22type+testing+stub%22+crash total 7
+   151032 closed 2024-06-29  Flutter App is always crashing on Hot Reload after changing certain classes
+   108161 closed 2022-07-22 ios App Crash & Screen flickering  Caused GPU Timeout
+   18910 closed 2018-06-28 Segfault during `flutter create` test on mac_bot
+   54707 closed 2020-04-14 App crashes when uploading to App Store
+   20118 closed 2018-08-01 Dart SDK roll for 8/1/2018
+   20104 closed 2018-08-01 Dart SDK roll for 8/1/2018 (#5918)
+   20120 closed 2018-08-01 Dart SDK roll for 8/1/2018
+[flutter/flutter] %22DefaultTypeTest%22 total 0

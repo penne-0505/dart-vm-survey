@@ -1,0 +1,15 @@
+source: https://github.com/flutter/flutter/issues/162375 comment by ChrisElliotUK 2025-02-25T18:51:59Z https://github.com/flutter/flutter/issues/162375#issuecomment-2682979975
+Thread 0 Crashed:
+0   App                           	0x000000010c916d24 stub Subtype2TestCache + 8
+1   App                           	0x000000010c916318 stub SlowTypeTest + 176
+2   App                           	0x000000010cb565cc SecureStorageOperator.get + 192 (secure_storage_operator.dart:17)
+3   App                           	0x000000010d0e16c4 SuspendState._createAsyncStarCallback.<anonymous closure> + 52 (async_patch.dart:407)
+4   App                           	0x000000010c96cb54 rootRunUnary + 100 (zone.dart:1538)
+5   App                           	0x000000010c96cc38 rootRunUnary (#2) + 124
+6   App                           	0x000000010d0e2634 _CustomZone.runUnary + 107 (zone.dart:142
+Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Subtype: KERN_INVALID_ADDRESS at 0xffffffffffffffff
+Exception Codes: 0x0000000000000001, 0xffffffffffffffff
+VM Region Info: 0xffffffffffffffff is not in any region.  Bytes after previous region: 18446743592673214464  
+      REGION TYPE                 START - END      [ VSIZE] PRT/MAX SHRMOD  REGION DETAIL
+      commpage (reserved)     1000000000

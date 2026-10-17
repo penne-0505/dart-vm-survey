@@ -1,0 +1,222 @@
+           PID: 2914706 (flutter_tester)
+           TID: 2914706 (flutter_tester)
+           UID: 1000 (penne)
+           GID: 1000 (penne)
+        Signal: 11 (SEGV) si_code: SEGV_MAPERR
+     Timestamp: Fri 2026-10-16 20:33:46 JST (8min ago)
+  Command Line: /home/penne/fvm/versions/3.47.7/bin/cache/artifacts/engine/linux-x64/flutter_tester --disable-vm-service --enable-checked-mode --verify-entry-points --enable-software-rendering --skia-deterministic-rendering --enable-dart-profiling --non-interactive --use-test-fonts --disable-asset-fonts --packages=/mnt/ct1/idd/dart-vm-survey/src/.dart_tool/package_config.json --flutter-assets-dir=/mnt/ct1/idd/dart-vm-survey/src/build/unit_test_assets /mnt/ct1/idd/dart-vm-survey/tmp/flutter_tools.NZWUIO/flutter_test_listener.SZFERU/listener.dart.dill
+    Executable: /home/penne/fvm/versions/3.47.7/bin/cache/artifacts/engine/linux-x64/flutter_tester
+ Control Group: /user.slice/user-1000.slice/user@1000.service/app.slice/app-com.anthropic.Claude-8982.scope
+          Unit: user@1000.service
+     User Unit: app-com.anthropic.Claude-8982.scope
+         Slice: user-1000.slice
+     Owner UID: 1000 (penne)
+       Boot ID: eb477fa56dd849d4b2d0a4524e0f3738
+    Machine ID: b7392d97063640afbda7837e38a97349
+      Hostname: penneotibo-frontier
+       Storage: /var/lib/systemd/coredump/core.flutter_tester.1000.eb477fa56dd849d4b2d0a4524e0f3738.2914706.1792150426000000.zst (present)
+  Size on Disk: 52M
+       Message: Process 2914706 (flutter_tester) of user 1000 dumped core.
+                
+                Stack trace of thread 2914706:
+                #0  0x00007fd871a85100 n/a (n/a + 0x0)
+                #1  0x00007fd82ee09911 n/a (n/a + 0x0)
+                #2  0x00007fd82f93dd02 n/a (n/a + 0x0)
+                #3  0x00007fd82f3d7613 n/a (n/a + 0x0)
+                #4  0x00007fd82f3d6f6d n/a (n/a + 0x0)
+                #5  0x00007fd82f3d74fd n/a (n/a + 0x0)
+                #6  0x00007fd82f93a894 n/a (n/a + 0x0)
+                #7  0x00007fd82f93a70d n/a (n/a + 0x0)
+                #8  0x00007fd82f93a478 n/a (n/a + 0x0)
+                #9  0x00007fd82fe9707b n/a (n/a + 0x0)
+                #10 0x00007fd82fe96d47 n/a (n/a + 0x0)
+                #11 0x00007fd82fe95e81 n/a (n/a + 0x0)
+                #12 0x00007fd82fe94a03 n/a (n/a + 0x0)
+                #13 0x00007fd82f97e2d1 n/a (n/a + 0x0)
+                #14 0x00007fd871a892ee n/a (n/a + 0x0)
+                #15 0x00007fd82f93dd02 n/a (n/a + 0x0)
+                #16 0x00007fd82f3d7613 n/a (n/a + 0x0)
+                #17 0x00007fd82f3d6f6d n/a (n/a + 0x0)
+                #18 0x00007fd82f3d74fd n/a (n/a + 0x0)
+                #19 0x00007fd82f93a894 n/a (n/a + 0x0)
+                #20 0x00007fd82f93a70d n/a (n/a + 0x0)
+                #21 0x00007fd82f93a478 n/a (n/a + 0x0)
+                #22 0x00007fd82fe9707b n/a (n/a + 0x0)
+                #23 0x00007fd82fe96d47 n/a (n/a + 0x0)
+                #24 0x00007fd82fe95e81 n/a (n/a + 0x0)
+                #25 0x00007fd82fe94a03 n/a (n/a + 0x0)
+                #26 0x00007fd82f97e2d1 n/a (n/a + 0x0)
+                #27 0x00007fd871a892ee n/a (n/a + 0x0)
+                #28 0x00007fd82f93dd02 n/a (n/a + 0x0)
+                #29 0x00007fd82f3d7613 n/a (n/a + 0x0)
+                #30 0x00007fd82f3d6f6d n/a (n/a + 0x0)
+                #31 0x00007fd82f3d74fd n/a (n/a + 0x0)
+                #32 0x00007fd82f93a894 n/a (n/a + 0x0)
+                #33 0x00007fd82f93a70d n/a (n/a + 0x0)
+                #34 0x00007fd82f93a478 n/a (n/a + 0x0)
+                #35 0x00007fd82fe9707b n/a (n/a + 0x0)
+                #36 0x00007fd82fe96d47 n/a (n/a + 0x0)
+                #37 0x00007fd82fe95e81 n/a (n/a + 0x0)
+                #38 0x00007fd82fe94a03 n/a (n/a + 0x0)
+                #39 0x00007fd824fa11c3 n/a (n/a + 0x0)
+                #40 0x00007fd82f3d7613 n/a (n/a + 0x0)
+                #41 0x00007fd82f3d6f6d n/a (n/a + 0x0)
+                #42 0x00007fd82f3d74fd n/a (n/a + 0x0)
+                #43 0x00007fd82f93a894 n/a (n/a + 0x0)
+                #44 0x00007fd82f93a70d n/a (n/a + 0x0)
+                #45 0x00007fd82f93a478 n/a (n/a + 0x0)
+                #46 0x00007fd82fe9707b n/a (n/a + 0x0)
+                #47 0x00007fd82fe96d47 n/a (n/a + 0x0)
+                #48 0x00007fd82fe95e81 n/a (n/a + 0x0)
+                #49 0x00007fd82fe94a03 n/a (n/a + 0x0)
+                #50 0x00007fd82f97e2d1 n/a (n/a + 0x0)
+                #51 0x00007fd871a892ee n/a (n/a + 0x0)
+                #52 0x00007fd82f93dd02 n/a (n/a + 0x0)
+                #53 0x00007fd82f3d7613 n/a (n/a + 0x0)
+                #54 0x00007fd82f3d6f6d n/a (n/a + 0x0)
+                #55 0x00007fd82f3d74fd n/a (n/a + 0x0)
+                #56 0x00007fd82f93a894 n/a (n/a + 0x0)
+                #57 0x00007fd82f93a70d n/a (n/a + 0x0)
+                #58 0x00007fd82f93a478 n/a (n/a + 0x0)
+                #59 0x00007fd82fe9707b n/a (n/a + 0x0)
+                #60 0x00007fd82fe96d47 n/a (n/a + 0x0)
+                #61 0x00007fd82fe95e81 n/a (n/a + 0x0)
+                #62 0x00007fd82fe94a03 n/a (n/a + 0x0)
+                #63 0x00007fd82f97e2d1 n/a (n/a + 0x0)
+                
+                Stack trace of thread 2914707:
+                #0  0x00007fd8756a08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007fd875694c79 n/a (libc.so.6 + 0x94c79)
+                #2  0x00007fd8756974ec pthread_cond_wait (libc.so.6 + 0x974ec)
+                #3  0x000055d0218b623f kDartSnapshotText (flutter_tester + 0x13d423f)
+                #4  0x000055d0216ba90e n/a (flutter_tester + 0x11d890e)
+                #5  0x000055d0216baffa n/a (flutter_tester + 0x11d8ffa)
+                #6  0x00007fd875698042 n/a (libc.so.6 + 0x98042)
+                #7  0x00007fd87572072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 2914709:
+                #0  0x00007fd8756a08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007fd875694c79 n/a (libc.so.6 + 0x94c79)
+                #2  0x00007fd8756974ec pthread_cond_wait (libc.so.6 + 0x974ec)
+                #3  0x000055d0218b623f kDartSnapshotText (flutter_tester + 0x13d423f)
+                #4  0x000055d0216ba90e n/a (flutter_tester + 0x11d890e)
+                #5  0x000055d0216baffa n/a (flutter_tester + 0x11d8ffa)
+                #6  0x00007fd875698042 n/a (libc.so.6 + 0x98042)
+                #7  0x00007fd87572072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 2914712:
+                #0  0x00007fd8756a08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007fd875694c79 n/a (libc.so.6 + 0x94c79)
+                #2  0x00007fd875697702 pthread_cond_timedwait (libc.so.6 + 0x97702)
+                #3  0x000055d0218e3912 kDartSnapshotText (flutter_tester + 0x1401912)
+                #4  0x000055d021a6b052 kDartSnapshotText (flutter_tester + 0x1589052)
+                #5  0x000055d021a13266 kDartSnapshotText (flutter_tester + 0x1531266)
+                #6  0x00007fd875698042 n/a (libc.so.6 + 0x98042)
+                #7  0x00007fd87572072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 2914710:
+                #0  0x00007fd8756a08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007fd875694c79 n/a (libc.so.6 + 0x94c79)
+                #2  0x00007fd8756974ec pthread_cond_wait (libc.so.6 + 0x974ec)
+                #3  0x000055d0218b623f kDartSnapshotText (flutter_tester + 0x13d423f)
+                #4  0x000055d0216ba90e n/a (flutter_tester + 0x11d890e)
+                #5  0x000055d0216baffa n/a (flutter_tester + 0x11d8ffa)
+                #6  0x00007fd875698042 n/a (libc.so.6 + 0x98042)
+                #7  0x00007fd87572072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 2914713:
+                #0  0x00007fd8756a08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007fd875694c79 n/a (libc.so.6 + 0x94c79)
+                #2  0x00007fd875697702 pthread_cond_timedwait (libc.so.6 + 0x97702)
+                #3  0x000055d0218e3912 kDartSnapshotText (flutter_tester + 0x1401912)
+                #4  0x000055d021a6bd86 kDartSnapshotText (flutter_tester + 0x1589d86)
+                #5  0x000055d021a6bee5 kDartSnapshotText (flutter_tester + 0x1589ee5)
+                #6  0x000055d021a13266 kDartSnapshotText (flutter_tester + 0x1531266)
+                #7  0x00007fd875698042 n/a (libc.so.6 + 0x98042)
+                #8  0x00007fd87572072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 2914711:
+                #0  0x00007fd8756a08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007fd875720bcb epoll_wait (libc.so.6 + 0x120bcb)
+                #2  0x000055d02167af28 n/a (flutter_tester + 0x1198f28)
+                #3  0x000055d021ce79d0 kDartSnapshotText (flutter_tester + 0x18059d0)
+                #4  0x00007fd875698042 n/a (libc.so.6 + 0x98042)
+                #5  0x00007fd87572072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 2914708:
+                #0  0x00007fd8756a08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007fd875694c79 n/a (libc.so.6 + 0x94c79)
+                #2  0x00007fd8756974ec pthread_cond_wait (libc.so.6 + 0x974ec)
+                #3  0x000055d0218b623f kDartSnapshotText (flutter_tester + 0x13d423f)
+                #4  0x000055d0216ba90e n/a (flutter_tester + 0x11d890e)
+                #5  0x000055d0216baffa n/a (flutter_tester + 0x11d8ffa)
+                #6  0x00007fd875698042 n/a (libc.so.6 + 0x98042)
+                #7  0x00007fd87572072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 2914724:
+                #0  0x00007fd8756a08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007fd875694c79 n/a (libc.so.6 + 0x94c79)
+                #2  0x00007fd875697702 pthread_cond_timedwait (libc.so.6 + 0x97702)
+                #3  0x000055d0218e3912 kDartSnapshotText (flutter_tester + 0x1401912)
+                #4  0x000055d021a6bd86 kDartSnapshotText (flutter_tester + 0x1589d86)
+                #5  0x000055d021a6bee5 kDartSnapshotText (flutter_tester + 0x1589ee5)
+                #6  0x000055d021a13266 kDartSnapshotText (flutter_tester + 0x1531266)
+                #7  0x00007fd875698042 n/a (libc.so.6 + 0x98042)
+                #8  0x00007fd87572072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 2914714:
+                #0  0x00007fd8756a08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007fd875694c79 n/a (libc.so.6 + 0x94c79)
+                #2  0x00007fd875697702 pthread_cond_timedwait (libc.so.6 + 0x97702)
+                #3  0x000055d0218e3912 kDartSnapshotText (flutter_tester + 0x1401912)
+                #4  0x000055d021a6bd86 kDartSnapshotText (flutter_tester + 0x1589d86)
+                #5  0x000055d021a6bee5 kDartSnapshotText (flutter_tester + 0x1589ee5)
+                #6  0x000055d021a13266 kDartSnapshotText (flutter_tester + 0x1531266)
+                #7  0x00007fd875698042 n/a (libc.so.6 + 0x98042)
+                #8  0x00007fd87572072c n/a (libc.so.6 + 0x12072c)
+                
+                Stack trace of thread 2914725:
+                #0  0x00007fd8756a08f2 n/a (libc.so.6 + 0xa08f2)
+                #1  0x00007fd875694c79 n/a (libc.so.6 + 0x94c79)
+                #2  0x00007fd875697702 pthread_cond_timedwait (libc.so.6 + 0x97702)
+                #3  0x000055d0218e3912 kDartSnapshotText (flutter_tester + 0x1401912)
+                #4  0x000055d021a6bd86 kDartSnapshotText (flutter_tester + 0x1589d86)
+                #5  0x000055d021a6bee5 kDartSnapshotText (flutter_tester + 0x1589ee5)
+                #6  0x000055d021a13266 kDartSnapshotText (flutter_tester + 0x1531266)
+                #7  0x00007fd875698042 n/a (libc.so.6 + 0x98042)
+                #8  0x00007fd87572072c n/a (libc.so.6 + 0x12072c)
+                ELF object binary architecture: AMD x86-64
+
+
+warning: Can't open file /mnt/ct1/idd/dart-vm-survey/tmp/flutter_tools.NZWUIO/flutter_test_listener.SZFERU/listener.dart.dill during file-backed mapping note processing
+[New LWP 2914706 (id 1)]
+[New LWP 2914707 (id 2)]
+[New LWP 2914709 (id 3)]
+[New LWP 2914712 (id 4)]
+[New LWP 2914710 (id 5)]
+[New LWP 2914713 (id 6)]
+[New LWP 2914711 (id 7)]
+[New LWP 2914708 (id 8)]
+[New LWP 2914724 (id 9)]
+[New LWP 2914714 (id 10)]
+[New LWP 2914725 (id 11)]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/libthread_db.so.1".
+Core was generated by `/home/penne/fvm/versions/3.47.7/bin/cache/artifacts/engine/linux-x64/flutter_tester --disable-vm-service --enable-checked-mode --verify-entry-points --enable-software-rendering --skia-deterministic-rendering --enable-dart-profiling --non-interactive --use-test-fonts --disable-asset-fonts --packages=/mnt/ct1/idd/dart-vm-survey/src/.dart_tool/package_config.json --flutter-assets-dir=/mnt/ct1/idd/dart-vm-survey/src/build/unit_test_assets /mnt/ct1/idd/dart-vm-survey/tmp/flutter_tools.NZWUIO/flutter_test_listener.SZFERU/listener.dart.dill'.
+Program terminated with signal SIGSEGV, Segmentation fault.
+#0  0x00007fd871a85100 in ?? ()
+[Current thread is 1 (Thread 0x7fd875866200 (LWP 2914706))]
+rax            0x54                84
+rip            0x7fd871a85100      0x7fd871a85100
+   0x7fd871a850f0:	mov    0x80(%r14),%r8
+   0x7fd871a850f7:	push   %r15
+   0x7fd871a850f9:	push   %r12
+   0x7fd871a850fb:	push   %rbx
+   0x7fd871a850fc:	mov    0x7(%r9),%rdi
+=> 0x7fd871a85100:	mov    -0x1(%rax),%r10d
+   0x7fd871a85104:	shr    $0xc,%r10d
+   0x7fd871a85108:	cmp    $0x39,%r10
+   0x7fd871a8510c:	jne    0x7fd871a85138
+   0x7fd871a8510e:	mov    0x17(%rax),%r10
+   0x7fd871a85112:	mov    0x27(%r10),%r10
+   0x7fd871a85116:	mov    0x7(%rax),%rsi

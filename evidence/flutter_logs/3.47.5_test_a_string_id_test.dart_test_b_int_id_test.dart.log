@@ -1,0 +1,6 @@
+00:00 +0: loading /home/penne/dev/scratch/dart-vm-survey/repro/flutter_bundle/test/a_string_id_test.dart
+00:00 +0: /home/penne/dev/scratch/dart-vm-survey/repro/flutter_bundle/test/a_string_id_test.dart: a String id passes the check
+00:00 +1: loading /home/penne/dev/scratch/dart-vm-survey/repro/flutter_bundle/test/b_int_id_test.dart
+00:00 +1: /home/penne/dev/scratch/dart-vm-survey/repro/flutter_bundle/test/b_int_id_test.dart: placeholder
+00:00 +2: /home/penne/dev/scratch/dart-vm-survey/repro/flutter_bundle/test/b_int_id_test.dart: an int id is rejected with a TypeError
+00:00 +3: All tests passed!

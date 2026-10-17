@@ -1,0 +1,25 @@
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/libthread_db.so.1".
+[New Thread 0x7ffff7b6a6c0 (LWP 2931228) (id 2)]
+[New Thread 0x7ffff77ff6c0 (LWP 2931229) (id 3)]
+ok: a
+
+Thread 3 "DartWorker" received signal SIGSEGV, Segmentation fault.
+[Switching to thread 3 (Thread 0x7ffff77ff6c0 (LWP 2931229))]
+0x00007ffff7bfad48 in ?? ()
+rax            0x54                84
+rip            0x7ffff7bfad48      0x7ffff7bfad48
+   0x7ffff7bfad42:	push   %rsp
+   0x7ffff7bfad43:	push   %rbx
+   0x7ffff7bfad44:	mov    0x7(%r9),%rdi
+=> 0x7ffff7bfad48:	mov    -0x1(%rax),%r10d
+   0x7ffff7bfad4c:	shr    $0xc,%r10d
+   0x7ffff7bfad50:	cmp    $0x39,%r10
+   0x7ffff7bfad54:	jne    0x7ffff7bfad80
+   0x7ffff7bfad56:	mov    0x1f(%rax),%r10
+   0x7ffff7bfad5a:	mov    0x27(%r10),%r10
+   0x7ffff7bfad5e:	mov    0xf(%rax),%rsi
+   0x7ffff7bfad62:	mov    %r8,%r13
+   0x7ffff7bfad65:	test   $0x4,%sil
+   0x7ffff7bfad69:	je     0x7ffff7bfada6
+   0x7ffff7bfad6f:	mov    %rsi,%r13

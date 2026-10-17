@@ -1,0 +1,31 @@
+Code for stub 'Subtype2TestCache': {
+0x7f33e3b850f0    4d8b8680000000         movq r8,[thr+0x80]   null
+0x7f33e3b850f7    4157                   push pp
+0x7f33e3b850f9    4154                   push r12
+0x7f33e3b850fb    53                     push rbx
+0x7f33e3b850fc    498b7907               movq rdi,[r9+0x7]
+0x7f33e3b85100    448b50ff               movl r10,[rax-0x1]
+0x7f33e3b85104    41c1ea0c               shrl r10,12
+0x7f33e3b85108    4983fa39               cmpq r10,0x39
+0x7f33e3b8510c    752a                   jnz 0x00007f33e3b85138
+        ;; Closure
+0x7f33e3b8510e    4c8b5017               movq r10,[rax+0x17]
+0x7f33e3b85112    4d8b5227               movq r10,[r10+0x27]
+0x7f33e3b85116    488b7007               movq rsi,[rax+0x7]
+0x7f33e3b8511a    4d89c5                 movq r13,r8
+0x7f33e3b8511d    40f6c604               testb rsi,4
+0x7f33e3b85121    0f8437000000           jz 0x00007f33e3b8515e
+0x7f33e3b85127    4989f5                 movq r13,rsi
+0x7f33e3b8512a    49d1ed                 shrq r13,1
+0x7f33e3b8512d    4183e501               andl r13,1
+0x7f33e3b85131    4e8b6ce81f             movq r13,[rax+r13*8+0x1f]
+0x7f33e3b85136    eb26                   jmp 0x00007f33e3b8515e
+        ;; Non-Closure
+0x7f33e3b85138    498bb648060000         movq rsi,[thr+0x648]
+0x7f33e3b8513f    488b7618               movq rsi,[rsi+0x18]
+0x7f33e3b85143    4a8b34d6               movq rsi,[rsi+r10*8]
+0x7f33e3b85147    4d89c5                 movq r13,r8
+0x7f33e3b8514a    4863b6bb000000         movsxdq rsi,[rsi+0xbb]
+0x7f33e3b85151    83feff                 cmpl rsi,-1
+0x7f33e3b85154    7405                   jz 0x00007f33e3b8515b
+0x7f33e3b85156    4c8b6cf0ff             movq r13,[rax+rsi*8-0x1]
